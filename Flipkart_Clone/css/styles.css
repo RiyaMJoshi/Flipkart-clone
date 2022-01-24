@@ -1,0 +1,302 @@
+/* 
+    Colors:
+
+    Flipkart "Blue": #2874f0
+    Flipkart Plus "Yellow": #ffe500
+*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    text-rendering: optimizeLegibility;
+}
+body{
+    font-size: 14px;
+    background-color: #f1f3f6;
+    color: #212121;
+    line-height: 1.4;
+}
+
+/* header section */
+header{
+    display: flex;
+    justify-content: space-evenly;
+    background: #2874f0;
+    width: 100%;
+    height: 56px;
+}
+.header-left{
+    width: 20%;
+    text-align: right;
+    margin: 5px 0;
+    cursor: pointer;
+}
+#flipkart-logo-img{
+    background: #2874f0 url('images/header/flipkart-logo.png') top left no-repeat;
+    width: 75px;
+    height: 20px;
+    margin-top: 5px;
+    margin-bottom: -8px;
+    /* display: block; */
+}
+.header-left-p a{
+    color: #fff;
+    text-decoration: none;
+    font-style: italic;
+    font-size: 11px;
+    margin: -1px -2px 0 0;
+}
+.header-left-p a span{
+    color: #ffe500;
+    font-weight: bold;
+    margin: 0 2px 0 0;
+}
+.header-left a:hover{
+    text-decoration: underline;
+}
+#explore-plus{
+    width: 10px;
+    height: 10px;
+    margin-left: -2px;
+}
+
+.header-center{
+    width: 40%;
+    text-align: left;
+    line-height: 50px;
+    cursor: pointer;
+    padding-left: 10px;
+    position: relative;
+}
+.header-center-input{
+    width: 100%;
+    height: 36px;
+    border: none;
+    border-radius: 2px;
+    text-align: left;
+    font-size: 14px;
+    padding: 0 16px;
+    /* margin: 0 auto 0 12px; */
+}
+.header-center-input:focus{
+    outline: none;
+}
+.btn_search{
+    cursor: pointer;
+}
+.fa-search{
+    position: absolute;
+    top: 30%;
+    left: 94%;
+    color: #2874f0;
+    font-size: 18px;
+}
+
+.header-right{
+    width: 40%;
+    display: flex;
+    font-size: 16px;
+    justify-content: flex-start;
+    line-height: 50px;
+    text-transform: capitalize;
+}
+.header-right a{
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    margin: 0 25px;
+    letter-spacing: 1px;
+}
+.header-right .active{
+    background: #fff;
+    color: #2874f0;
+    margin-top: 8px;
+    padding: 5px 40px;
+    height: 32px;
+    width: 121px;
+    line-height: 20px;
+    text-align: center;
+    border-radius: 2px;
+    border: 1px solid #dbdbdb;;
+}
+.fa-chevron-down{
+    padding-left: 10px;
+    font-size: 10px;
+}
+.fa-shopping-cart{
+    padding-right: 10px;
+}
+
+
+/* <!-- Category Section --> */
+.category-row{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+.category-row .category-col{
+    padding: 12px 8px;
+    text-align: center;
+    cursor: pointer;
+    color: #212121;
+}
+.category-row .category-col:first-child{
+    padding-left: 22px;
+}
+.category-row .category-col:last-child{
+    padding-right: 24px;
+}
+.category-row .category-col .category-image{
+    height: 64px;
+    width: 64px;
+}
+.category-name{
+    font-weight: 700;
+    font-size: 14px;
+}
+.category-name:hover{
+    color: #2874f0;
+}
+
+
+/* Deals of the Day and Advertisement Section */
+.main-section{
+    display: flex;
+}
+.main-card{
+    width: 80%;
+}
+
+/* Common for all sections */
+
+.card{
+    border-top: 1px solid #eaeaea;
+    border-radius: 5px;
+    box-shadow:  0 1px 1px 0 rgb(0 0 0 / 16%);
+    background: #fff;
+    margin: 10px 5px;
+}
+
+.card-1{
+    margin: 0 10px;
+}
+.common-heading{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 15px 20px;
+    border-bottom: 1px solid rgba(0,0,0,.1);
+}
+
+.common-heading-left h2{
+    font-size: 22px;
+    line-height: 32px;
+    display: inline-block;
+    font-weight: 500;
+}
+.common-heading-left h3{
+    font-size: 14px;
+    color: #b2b2b2;
+    font-weight: 400;
+}
+.common-heading-left h3.timer{
+    display: inline-block;
+    padding: 15px 20px;
+}
+.common-heading .common-heading-right{
+    float: right;
+}
+.common-heading-right button{
+    background: #2874f0;
+    color: #fff;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 20%);
+    border: none;
+    display: inline-block;
+    border-radius: 2px;
+    padding: 10px 20px;
+    margin-top: 7px;
+    letter-spacing: .3px;
+    font-size: 13px;
+    font-weight: 700;
+    transition: box-shadow .2s ease;
+    vertical-align: super;
+    cursor: pointer;
+    outline: none;
+}
+
+.common-row{
+    display: flex;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+    justify-content: space-evenly;
+    min-height: 318px;
+}
+.common-col{
+    padding: 25px 15px;
+    display: inline-block;
+    vertical-align: top;
+    /* width: 100%; */
+    width: 232px;
+    max-height: 366px;
+    text-align: center;
+    transition: 100ms;
+}
+.common-col img{
+    height: 150px;
+    width: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.common-col:hover{
+    cursor: pointer;
+    transform: scale(1.03);
+    
+}
+.desc-1, .desc-2, .desc-3{
+    font-size: 14px;
+}
+.desc-1{   
+    font-weight: 500;
+    color: #212121;
+    margin-top: 15px;
+}
+.desc-2{
+    padding-top: 8px; /* padding: 8px 0 0; */
+    color: #388e3c;
+}
+.desc-3{
+    padding-top: 7px;
+    opacity: 0.6;
+    color: #212121;
+}
+
+/* Ad Card */
+.ad-card{
+    flex: 0 0 248px;
+    max-width: 248px;
+    padding: 0 0 4px; 
+    margin: 0 10px;
+    display: block;
+    width: 16.66%;
+    float: right;
+}
+.ad-card .ad-image{
+    position: relative;
+    padding: 4px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px 0 rgb(0 0 0 / 8%);
+    height: 100%;
+}
+.ad-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+.adv-img{
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+}
